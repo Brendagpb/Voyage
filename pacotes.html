@@ -7,6 +7,7 @@
     <title>Pacotes de Viagem - Voyage Voyage</title>
 </head>
 <body>
+    <div id="snowflakes"></div> 
     <nav class="navbar">
         <div class="logo">
             <img src="imagenss/france.png" alt="Logo Voyage Voyage">
@@ -15,7 +16,7 @@
         <div class="menu">
             <a href="index.html">Home</a>
             <a href="pacotes.html">Pacotes de Viagem</a>
-            <a id="botao" href="">Entre em contato</a>
+            <a id="botao" href="#formulario">Entre em contato</a>
         </div>
     </nav>
 
@@ -43,6 +44,18 @@
                 <p class="preco">R$ 6.800,00</p>
             </div>
             <div class="card">
+                <img src="imagenss/lille-weekend.webp" alt="Arte e História em Lille">
+                <h3>Pacote Lille - Arte e História</h3>
+                <p>3 dias em Lille, visitando museus e conhecendo sua arquitetura flamenga.</p>
+                <p class="preco">R$ 4.200,00</p>
+            </div>
+            <div class="card">
+                <img src="imagenss/bonifacio-corsega-franca.jpg" alt="Beleza Natural na Córsega">
+                <h3>Pacote Córsega - Aventura e Beleza Natural</h3>
+                <p>7 dias explorando as paisagens da Córsega, com atividades ao ar livre e visitas a vilarejos.</p>
+                <p class="preco">R$ 7.800,00</p>
+            </div>
+            <div class="card">
                 <img src="imagenss/Renaissance-luxury-hotels-Bordeaux.jpg" alt="Hotel de Luxo em Bordeaux">
                 <h3>Pacote Bordeaux Vinhos</h3>
                 <p>6 dias em Bordeaux, explorando vinícolas e gastronomia regional.</p>
@@ -50,6 +63,8 @@
             </div>
         </div>
     </div>
+
+    <button id="backToTop">Subir ao topo</button>
 
     <footer>
         <div class="footer-content">
@@ -69,5 +84,41 @@
             <p>&copy; 2024 Voyage Voyage.</p>
         </div>
     </footer>
+
+    <script>
+function createSnowflakes() {
+    const snowflakesContainer = document.getElementById("snowflakes");
+    const numSnowflakes = 50; 
+
+    for (let i = 0; i < numSnowflakes; i++) {
+        const snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+        snowflake.innerHTML = "&#10052;"; 
+        
+        snowflake.style.left = `${Math.random() * 100}vw`; 
+        snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; 
+        snowflake.style.animationDelay = `${Math.random() * 5}s`; 
+
+        snowflakesContainer.appendChild(snowflake);
+    }
+}
+
+createSnowflakes();
+
+document.getElementById("backToTop").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("backToTop").style.display = "block";
+    } else {
+        document.getElementById("backToTop").style.display = "none";
+    }
+}
+
+startCountdown();
+
+    </script>
 </body>
 </html>

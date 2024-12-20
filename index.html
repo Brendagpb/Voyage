@@ -15,23 +15,41 @@
         <div class="menu">
             <a href="index.html">Home</a>
             <a href="pacotes.html">Pacotes de Viagem</a>
-            <a id="botao" href="">Entre em contato</a>
+            <a id="botao" href="#formulario">Entre em contato</a>
         </div>
     </nav>
+
     <header>
         <div class="linha-cabecalho">
             <h2>Bonjour França</h2>
-            <p>Você sonha em conhecer a França, mas não sabe por onde começar? A Voyage Voyage é a sua porta de entrada para a experiência francesa dos seus sonhos. 
-                Seja para explorar as luzes de Paris, relaxar nas praias da Côte d'Azur ou se perder nas vilas pitorescas da Provence, nós estamos aqui para tornar a sua viagem única e inesquecível.</p>
+            <p>Você sonha em conhecer a França, mas não sabe por onde começar? A Voyage Voyage é a sua porta de entrada para a experiência francesa dos seus sonhos. </p>
             <p>Com um pacote de viagem personalizado, você pode visitar os pontos turísticos mais famosos e exclusivos, conhecer a culinária local e desfrutar do charme francês.</p>
-            <p>Além disso, garantimos a sua segurança e conforto, para que você possa aproveitar cada momento da sua viagem sem preocupações. Se você quer uma viagem inesquecível, a Voyage Voyage é a escolha certa!</p>
-            <a class="botao-contato" href="">Compre sua Passagem</a>
+            <div id="countdown"></div>
+            <h3>50% de desconto!</h3>
         </div>
         <div class="imagens-container">
             <img class="imagem" src="imagenss/OIP (1).jpg" alt="">
             <img class="imagem" src="imagenss/R.jpg" alt="">
         </div>
     </header>
+
+    <div id="formulario">
+        <h2>Formulário de Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" placeholder="Deixe aqui sua mensagem" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <button id="backToTop">Subir ao topo</button>
 
     <footer>
         <div class="footer-content">
@@ -41,15 +59,18 @@
                 <p><strong>Telefone</strong>: (54) 1234-5678</p>
                 <p><strong>E-mail</strong>: voyagevoyage@gmail.com</p>
             </div>
-        <div class="footer-mídia">
+            <div class="footer-mídia">
                 <h2>Redes Sociais</h2>
                 <a href="#" target="_blank"><img src="imagenss/whatsapp (1).png" alt=""></a>
                 <a href="#" target="_blank"><img src="imagenss/twitter (1).png" alt=""></a>
                 <a href="#" target="_blank"><img src="imagenss/tik-tok (1).png" alt=""></a>
-        </div>
-        <div class="footer-botton">
-            <p>&copy; 2024 Voyage Voyage.</p>
+            </div>
+            <div class="footer-botton">
+                <p>&copy; 2024 Voyage Voyage.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

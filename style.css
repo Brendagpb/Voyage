@@ -147,3 +147,61 @@ footer {
     padding: 10px 0;
 }
 
+#countdown {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(47, 130, 224);
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(47, 130, 224);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: none;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: rgb(35, 101, 177);
+}
+
+form {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(47, 130, 224);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(35, 101, 177);
+}
+
+#formulario h2 {
+    margin-left: 38%;
+    font-size: 32px; 
+    color: rgb(47, 130, 224); 
+}
